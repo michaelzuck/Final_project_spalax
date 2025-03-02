@@ -1,4 +1,4 @@
-# final_project_spalax
+# final project spalax
 
 ## Overview
 **final_project_spalax** is a project designed to process seismic/audio signals, extract relevant features, and classify them by two main categories:
@@ -192,5 +192,5 @@ This project does not have a declared license in this repository. Please include
 ## Contact
 For questions, bug reports, or collaboration, please open an issue or contact the repository owner.
 
-## Thank you for using final_project_spalax!
+## Thank you for using final project spalax!
 We hope these tools help you in analyzing and classifying seismic or audio signals. Feel free to adapt the code to fit your specific needs.
