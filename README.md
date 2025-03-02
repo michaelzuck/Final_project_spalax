@@ -1,7 +1,7 @@
 # Final Project Spalax
 
 ## Overview
-**final_project_spalax** is a project designed to process seismic/audio signals, extract relevant features, and classify them by two main categories:
+**final project spalax** is a project designed to process seismic/audio signals, extract relevant features, and classify them by two main categories:
 
 - **Sender**: Classifying signals by which “sender” (source) produced them.  
 - **Recipient**: Classifying signals by which “recipient” (destination) they were intended for.
@@ -20,7 +20,7 @@ A simple [Tkinter](https://docs.python.org/3/library/tkinter.html)-based GUI (`c
 ## Project Structure
 
 ```bash
-final_project_spalax/
+final project spalax/
 │
 ├── signals/                              # Directory containing .wav data, organized in subfolders.
 │   ├── SenderA_vs_SenderB_01/           # Example subfolder structure
@@ -72,7 +72,7 @@ standard Python libraries (collections, os, io, etc.)
 ## Project Setup
 Clone or download this repository:
 ```bash
-git clone https://github.com/YourUsername/final_project_spalax.git
+git clone https://github.com/YourUsername/final project spalax.git
 ```
 Ensure the signals directory is in the same folder as all the .py files.
 Populate signals with your .wav data, organized by subfolders that match your desired labeling scheme (see Data Organization).
