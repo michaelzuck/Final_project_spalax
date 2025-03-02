@@ -1,4 +1,4 @@
-# final project spalax
+# Final Project Spalax
 
 ## Overview
 **final_project_spalax** is a project designed to process seismic/audio signals, extract relevant features, and classify them by two main categories:
