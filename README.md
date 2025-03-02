@@ -1,26 +1,42 @@
 # final_project_spalax
 
-**Overview**  
-`final_project_spalax` is a project designed to process seismic/audio signals, extract relevant features, and classify them by two main categories:
+## Overview
+**final_project_spalax** is a project designed to process seismic/audio signals, extract relevant features, and classify them by two main categories:
 
-- **Sender**: Classifying signals by which “sender” (source) produced them.
+- **Sender**: Classifying signals by which “sender” (source) produced them.  
 - **Recipient**: Classifying signals by which “recipient” (destination) they were intended for.
 
 This repository contains Python scripts that:
 
-1. Load `.wav` audio files (found in the `signals` directory).
-2. Apply signal-processing techniques (low-pass filtering, feature extraction).
-3. Train machine learning models (RandomForest, One-Class SVM) to classify or detect “unknown” (novelty detection).
+1. Load `.wav` audio files (found in the **signals** directory).  
+2. Apply signal-processing techniques (low-pass filtering, feature extraction).  
+3. Train machine learning models ([RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), [One-Class SVM](https://scikit-learn.org/stable/modules/generated/sklearn.svm.OneClassSVM.html)) to classify or detect “unknown” (novelty detection).  
 4. Evaluate performance via confusion matrices, classification reports, and permutation tests.
-5. Provide a simple Tkinter-based GUI (`combined_gui.py`) to train, test, and visualize results in an integrated environment.
+
+A simple [Tkinter](https://docs.python.org/3/library/tkinter.html)-based GUI (`combined_gui.py`) is also provided to train, test, and visualize results in an integrated environment.
 
 ---
 
 ## Project Structure
 
-final_project_spalax/ │ ├── signals/ # Directory containing .wav data, organized in subfolders. │ ├── SenderA_vs_SenderB_01/ # Example subfolder structure │ ├── SenderC_vs_SenderD_02/ │ └── ... (additional subfolders) │ ├── sender.py # Main script for Sender classification (train_model) ├── recepient.py # Main script for Recipient classification (train_model) ├── sender_generalization.py # Advanced generalization script for Sender ├── recpient_generaliztion.py # Advanced generalization script for Recipient ├── test_sender.py # Permutation test for trained Sender model ├── test_recipient.py # Permutation test for trained Recipient model ├── combined_gui.py # Tkinter GUI integrating Sender & Recipient workflows │ └── README.md # You're reading it now
-
-
+```bash
+final_project_spalax/
+│
+├── signals/                              # Directory containing .wav data, organized in subfolders.
+│   ├── SenderA_vs_SenderB_01/           # Example subfolder structure
+│   ├── SenderC_vs_SenderD_02/
+│   └── ... (additional subfolders)
+│
+├── sender.py                             # Main script for Sender classification (train_model)
+├── recepient.py                          # Main script for Recipient classification (train_model)
+├── sender_generalization.py              # Advanced generalization script for Sender
+├── recpient_generaliztion.py             # Advanced generalization script for Recipient
+├── test_sender.py                        # Permutation test for trained Sender model
+├── test_recipient.py                     # Permutation test for trained Recipient model
+├── combined_gui.py                       # Tkinter GUI integrating Sender & Recipient workflows
+│
+└── README.md                             # You're reading it now
+```
 
 - **Important**: The `signals` directory is expected to contain subfolders for each class (or each combination like `BMR2_vs_BMR3_28`), where each subfolder has `.wav` files relevant to that particular class configuration.  
 
