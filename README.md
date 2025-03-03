@@ -141,8 +141,8 @@ Examples:
 
 ```bash
 python sender_generalization.py
-```
 python recpient_generaliztion.py
+```
 (Adjust the scripts as needed for your specific environment/folder names.)
 
 3. GUI Use
